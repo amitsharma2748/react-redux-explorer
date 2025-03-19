@@ -10,7 +10,7 @@ const initialState: fetchUserSliceType = {
   filteredList:null
 };
 
-// ✅ Use `unknown` for better TypeScript safety
+// Use `unknown` for better TypeScript safety
 export const fetchUsers = createAsyncThunk<
 UserListType[], 
 void, 
