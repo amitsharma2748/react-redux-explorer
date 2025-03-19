@@ -1,38 +1,41 @@
-```md
-# 📌 React Redux User Management App
-
-A simple React-Redux application that fetches and displays user data from an API. Users can be searched and filtered by name, email, ID, or company.
+You're right! Since the app is built with **Vite**, the development server runs on **port 5173 by default**, and the production build will be in the `/dist` folder instead of `/build`. Here's the corrected **README.md**:
 
 ---
 
-## 🚀 Features
-- 🔍 **Search & Filter** users dynamically
-- 🗄️ **State Management** using Redux Toolkit
-- 🚦 **API Status Handling** (Loading, Success, Error)
-- 🌐 **Routing** with React Router
-- 🎨 **Styled with Tailwind CSS**
-- ✅ **Basic Unit Tests** (Jest & React Testing Library)
+# 📌 React Redux User Management App  
+
+A simple React-Redux application that fetches and displays user data from an API. Users can be searched and filtered by name, email, ID, or company.  
 
 ---
 
-## 📂 Project Setup & Installation
-
-### 1️⃣ Prerequisites
-Ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (v18.20.5)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+## 🚀 Features  
+- 🔍 **Search & Filter** users dynamically  
+- 🗄️ **State Management** using Redux Toolkit  
+- 🚦 **API Status Handling** (Loading, Success, Error)  
+- 🌐 **Routing** with React Router  
+- 🎨 **Styled with Tailwind CSS**  
+- ✅ **Basic Unit Tests** (Jest & React Testing Library)  
 
 ---
 
-### 2️⃣ Clone the Repository
+## 📂 Project Setup & Installation  
+
+### 1️⃣ Prerequisites  
+Ensure you have the following installed:  
+- [Node.js](https://nodejs.org/) (v18 or later)  
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)  
+
+---
+
+### 2️⃣ Clone the Repository  
 ```sh
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/amitsharma2748/react-redux-explorer.git
+cd react-redux-explorer
 ```
 
 ---
 
-### 3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies  
 ```sh
 npm install
 ```
@@ -43,7 +46,7 @@ yarn install
 
 ---
 
-### 4️⃣ Start the Development Server
+### 4️⃣ Start the Development Server  
 ```sh
 npm run dev
 ```
@@ -51,11 +54,11 @@ or
 ```sh
 yarn dev
 ```
-The app will be available at `http://localhost:5173/`.
+The app will be available at **`http://localhost:5173/`** (or another port if 5173 is occupied).  
 
 ---
 
-## 🏗️ Build for Production
+## 🏗️ Build for Production  
 ```sh
 npm run build
 ```
@@ -63,20 +66,20 @@ or
 ```sh
 yarn build
 ```
-The optimized production build will be in the `/dist` folder.
+The optimized production build will be in the **`/dist`** folder.  
 
 ---
 
-## 🛠️ Environment Variables (If Required)
-Create a `.env` file in the root directory and add the necessary variables:
+## 🛠️ Environment Variables (If Required)  
+Create a `.env` file in the root directory and add the necessary variables:  
 ```sh
-VITE_API_URL=https://your-api-url.com
+VITE_BACKEND_URL=https://your-api-url.com
 ```
-Restart the development server after making changes.
+Restart the development server after making changes.  
 
 ---
 
-## ✅ Running Tests
+## ✅ Running Tests  
 ```sh
 npm test
 ```
@@ -87,18 +90,23 @@ yarn test
 
 ---
 
-## 🛤️ Project Structure
+## 🛤️ Project Structure  
 ```
 /src
   ├── components/        # Reusable UI components
   ├── modules/           # Feature-based modules
   │   ├── users/         # User list and details pages
-  │   │   ├── component/ # Components for posts module
+  │   │   ├── component/ # Components for user module
   ├── redux/             # Redux store & slices
   ├── utils/             # Utility functions & constants
   ├── App.tsx            # Main app component
   ├── main.tsx           # Entry point
   ├── index.css          # Global styles
 ```
+
+---
+
+## 🔗 API Integration  
+This project fetches user data from a public API. The API request is handled using **Redux Toolkit AsyncThunk** with Axios.  
 
 ---
