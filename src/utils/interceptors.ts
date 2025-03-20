@@ -1,7 +1,7 @@
 import axios, { InternalAxiosRequestConfig, AxiosResponse, AxiosError } from "axios";
 
 const axiosHttp = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_URL, 
+  baseURL: "https://jsonplaceholder.typicode.com/", 
 });
 
 axiosHttp.interceptors.request.use(
